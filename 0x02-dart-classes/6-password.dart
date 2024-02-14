@@ -14,6 +14,6 @@ class Password {
 
   @override
   String toString() {
-    return 'Your Password is: ${this._password ?? "null"}';
+    return 'Your Password is: ${this._password ?? ""}';
   }
 }
