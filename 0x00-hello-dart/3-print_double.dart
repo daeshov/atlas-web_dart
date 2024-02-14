@@ -1,5 +1,5 @@
 void main() {
-  double number = 3.14159;
+  var n = 3.14159265359;
   // Print the double with a precision of 2 digits
-  print('Double: ${number.toStringAsFixed(2)}');
+  print('Double: ${n.toStringAsFixed(2)}');
 }
