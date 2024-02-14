@@ -4,11 +4,8 @@ class User {
   int age = 0;
   double height = 0.0;
   String? user_password;
-  Password password = Password();
 
-  User({required this.id, required this.name, required this.age, required this.height, this.user_password}) {
-    password = Password(password: user_password);
-  }
+  User({required this.id, required this.name, required this.age, required this.height, this.user_password});
 
   Map<String, dynamic> toJson() {
     return {
@@ -32,10 +29,10 @@ class User {
 
   @override
   String toString() {
-    return 'User(id: $id, name: $name, age: $age, height: $height, Password: ${password.toString()})';
+    return 'User(id: $id, name: $name, age: $age, height: $height, user_password: ${user_password ?? "null"})';
   }
 
   bool isPasswordValid() {
-    return password.isValid();
+    return true; // Implement your logic here
   }
 }

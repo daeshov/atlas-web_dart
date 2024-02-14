@@ -1,3 +1,5 @@
+import '6-inheritance.dart';
+
 void main() {
   final djo = User(
       id: 1, name: "Djo", age: 25, height: 1.89, user_password: "Azert23defde");
